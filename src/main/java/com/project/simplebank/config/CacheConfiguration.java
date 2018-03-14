@@ -44,6 +44,7 @@ public class CacheConfiguration {
             cm.createCache(com.project.simplebank.domain.User.class.getName() + ".authorities", jcacheConfiguration);
             cm.createCache(com.project.simplebank.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(com.project.simplebank.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
+            cm.createCache(com.project.simplebank.domain.BankAccount.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }

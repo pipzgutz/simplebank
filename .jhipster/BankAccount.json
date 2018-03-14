@@ -1,0 +1,28 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "user",
+            "otherEntityName": "user",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "login",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "bankAccount"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "balance",
+            "fieldType": "BigDecimal",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20180314154414",
+    "dto": "no",
+    "service": "serviceClass",
+    "entityTableName": "bank_account",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}
